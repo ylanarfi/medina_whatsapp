@@ -115,3 +115,7 @@ dmypy.json
 
 # PyCharm settings
 .idea/
+
+#Local environement
+Scripts/
+Include/
