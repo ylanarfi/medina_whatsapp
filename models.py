@@ -8,9 +8,9 @@ url = URL.create(
     drivername="postgresql",
     username=config("DB_USER"),
     password=config("DB_PASSWORD"),
-    host="localhost",
-    database="postgres",
-    port=5432
+    host="db-postgresql-tor1-93794-do-user-11708640-0.b.db.ondigitalocean.com",
+    database="defaultdb",
+    port=25060
 )
 
 engine = create_engine(url)
