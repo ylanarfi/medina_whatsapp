@@ -5,6 +5,10 @@ from decouple import config
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
 
+# Unique Violation
+from psycopg2.errorcodes import UNIQUE_VIOLATION
+from psycopg2 import errors
+
 # Internal imports
 from models import Conversation, SessionLocal
 from utils import send_message, logger
