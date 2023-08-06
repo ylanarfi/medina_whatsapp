@@ -14,7 +14,7 @@ from models import Conversation, SessionLocal
 from utils import send_message, logger
 
 
-app = FastAPI()
+app = FastAPI(debug=True)
 # Set up the OpenAI API client
 openai.api_key = config("OPENAI_API_KEY")
 
