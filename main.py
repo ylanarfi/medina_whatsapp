@@ -44,7 +44,7 @@ async def reply(request: Request, Body: str = Form(), db: Session = Depends(get_
     response = openai.ChatCompletion.create(
         model="gpt-4",
         messages=messages,
-        max_tokens=2048,
+        max_tokens=500,
         n=1,
         stop=None,
         temperature=0.5
