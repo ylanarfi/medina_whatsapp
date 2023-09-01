@@ -52,6 +52,7 @@ async def reply(request: Request, Body: str = Form(), db: Session = Depends(get_
 
     # The generated text
     chatgpt_response = response.choices[0].message.content
+    print(chatgpt_response)
 
     # Store the conversation in the database
     try:
